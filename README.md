@@ -12,7 +12,7 @@ Welcome to the **Recipe Finder** web app! This project helps you discover recipe
   
 ## Demo 🎥
 
-[Click here to view the live demo](#) (https://owais41111.github.io/Recipe-Finder/)
+[Click here to view the live demo](https://owais41111.github.io/Recipe-Finder/)
 
 ---
 
@@ -79,17 +79,6 @@ The core structure of the Recipe Finder app, containing:
 - **Search and Filter**: Fetches recipes from TheMealDB API and filters based on user input or category.
 - **Favorites**: Allows users to add, view, and delete favorites using localStorage.
 
----
-
-## Screenshots 📸
-
-- **App UI:**
-
-  ![Recipe Finder](https://via.placeholder.com/600x400.png?text=App+UI+Screenshot)
-
-- **Dark Mode:**
-
-  ![Dark Mode](https://via.placeholder.com/600x400.png?text=Dark+Mode+Screenshot)
 
 ---
 
