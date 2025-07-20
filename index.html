@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Ej Logo.png">
+</head>
+
+<body>
+
+    <!-- App Title -->
+    <h1>🍲 Recipe Finder</h1>
+
+    <!-- Top Controls -->
+    <div class="controls">
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+        <select onchange="changeTheme(this.value)">
+            <option value="">Select Color Theme</option>
+            <option value="default">Default (Coral)</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+        </select>
+
+        <button onclick="loadFavorites()">Show Favorites</button>
+    </div>
+
+    <!-- Favorites Modal Panel -->
+    <div id="favoritesPanel" class="favorites-panel hidden">
+        <div class="favorites-header">
+            <h2>❤️ Your Favorite Recipes</h2>
+            <button onclick="closeFavorites()" class="close-btn">✖</button>
+        </div>
+        <div id="favoritesContent">
+            <!-- Favorite recipes will be injected here -->
+        </div>
+    </div>
+
+    <!-- Category Icons -->
+    <div class="category-icons">
+        <img src="https://www.themealdb.com/images/category/beef.png" alt="Beef" onclick="filterCategory('Beef')"
+            title="Beef" />
+        <img src="https://www.themealdb.com/images/category/chicken.png" alt="Chicken"
+            onclick="filterCategory('Chicken')" title="Chicken" />
+        <img src="https://www.themealdb.com/images/category/seafood.png" alt="Seafood"
+            onclick="filterCategory('Seafood')" title="Seafood" />
+        <img src="https://www.themealdb.com/images/category/dessert.png" alt="Dessert"
+            onclick="filterCategory('Dessert')" title="Dessert" />
+        <img src="https://www.themealdb.com/images/category/pasta.png" alt="Pasta" onclick="filterCategory('Pasta')"
+            title="Pasta" />
+        <img src="https://www.themealdb.com/images/category/lamb.png" alt="Lamb" onclick="filterCategory('Lamb')"
+            title="Lamb" />
+        <img src="https://www.themealdb.com/images/category/vegan.png" alt="Vegan" onclick="filterCategory('Vegan')"
+            title="Vegan" />
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for recipes..." />
+        <button onclick="handleSearch()">Search</button>
+    </div>
+
+    <!-- Spinner Loader -->
+    <div id="spinner"></div>
+
+    <!-- Recipe Results -->
+    <div id="results"></div>
+
+    <!-- Your JS Code -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
